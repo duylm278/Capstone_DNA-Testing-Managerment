@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/extract"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_extract"
+        android:title="Ly Trích" />
+    <item
+        android:id="@+id/pcr"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_pcr"
+        android:title="PCR" />
+    <item
+        android:id="@+id/electrophoresis"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_electrophoresis"
+        android:title="Điện Di" />
+    <item
+        android:id="@+id/purify"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_purify"
+        android:title="T. Sạch" />
+    <item
+        android:id="@+id/result"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_result"
+        android:title="Kết Quả" />
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/colorGrayLight">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FAFAFA"
+            app:titleTextColor="@color/colorBlack"
+            app:subtitleTextColor="@color/colorBlack"
+            app:collapseIcon="@drawable/ic_back"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        android:gravity="center_vertical"
+        android:weightSum="100"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="35"
+            android:layout_height="wrap_content"
+            android:text="Mã CA"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="QĐTC Số"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="35"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Tổ Chức"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="94"
+        android:id="@+id/progress_bar_layout"
+        android:background="@color/colorWhite">
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:indeterminateDrawable="@drawable/circular_progress_bar"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="94"
+        android:id="@+id/swipeRefresh">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_management"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/nav_home"-->
+        <!--android:enabled="true"-->
+        <!--app:labelVisibilityMode="labeled"-->
+        <!--android:icon="@mipmap/ic_nav_home"-->
+        <!--android:title="@string/nav_home" />-->
+    <!--<item-->
+        <!--android:id="@+id/nav_analysis"-->
+        <!--android:enabled="true"-->
+        <!--app:labelVisibilityMode="labeled"-->
+        <!--android:icon="@mipmap/ic_nav_analysis"-->
+        <!--android:title="@string/nav_home" />-->
+    <item
+        android:id="@+id/nav_testing"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_nav_checklist"
+        android:title="@string/nav_testing" />
+    <item
+        android:id="@+id/nav_user"
+        android:enabled="true"
+        app:labelVisibilityMode="labeled"
+        android:icon="@mipmap/ic_nav_user"
+        android:title="@string/nav_user" />
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project.activity.ProcessActivity"
+    android:orientation="horizontal"
+    android:background="@color/corlorWindowBackground"
+    android:gravity="center">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview_Process"
+            android:paddingBottom="25dp"
+            android:paddingTop="25dp"/>
+        <!--<?xml version="1.0" encoding="utf-8"?>-->
+        <!--<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--tools:context=".project.activity.ProcessActivity"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/corlorWindowBackground">-->
+        <!--&lt;!&ndash;<androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/recyclerview_Process"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingBottom="25dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:paddingTop="25dp"/>&ndash;&gt;-->
+        <!--<androidx.viewpager.widget.ViewPager-->
+        <!--android:id="@+id/viewpager_process"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="92"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+        <!--<com.google.android.material.bottomnavigation.BottomNavigationView-->
+        <!--android:id="@+id/bottom_navigation_process"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_weight="8"-->
+        <!--android:background="@color/corlorWindowBackground"-->
+        <!--app:labelVisibilityMode="labeled"-->
+        <!--app:menu="@menu/bottom_navigation_process_menu" />-->
+
+        <!--</LinearLayout>-->
+</LinearLayout>
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="2"
+        android:gravity="center">
+        <ImageView
+            android:layout_marginLeft="-25dp"
+            android:id="@+id/status_pcr_extract_process"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/ic_unfinish_circle"/>
+        <ImageView
+            android:id="@+id/line_pcr_left"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_unfinish_line"/>
+        <ImageView
+            android:id="@+id/status_pcr_process"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/ic_unfinish_circle"/>
+        <ImageView
+            android:id="@+id/line_pcr_right"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_unfinish_line"/>
+        <ImageView
+            android:layout_marginRight="-25dp"
+            android:id="@+id/status_pcr_electrophoresis_process"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/ic_unfinish_circle"/>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pcrViewPaper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorBlueL"
+            android:background="#FAFAFA"
+            app:tabInlineLabel="true"
+            app:tabSelectedTextColor="@color/colorBlueL"
+            app:tabTextColor="@color/colorBlack"
+            app:tabMode="fixed"/>
+
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>

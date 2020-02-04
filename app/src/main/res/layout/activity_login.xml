@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project.activity.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/corlorWindowBackground"
+    android:gravity="center_vertical"
+    android:id="@+id/out">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DNA Testing Process Management"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+    <ImageView
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:background="@mipmap/ic_adn"
+        android:layout_gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Tài khoản"
+        android:background="@color/corlorWindowBackground"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:background="@color/corlorWindowBackground"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:focusableInTouchMode="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btbGoToLogin"
+        android:background="@drawable/button_login"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="ĐĂNG NHẬP"
+        android:onClick="toLogin"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

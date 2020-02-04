@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayLight"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="99.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/notEdit">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hiện chưa có thông tin chỉnh sửa"
+            android:textColor="@color/grey"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="99.5"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="STT"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Ngày"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Giờ"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/extract_log_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="99"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
